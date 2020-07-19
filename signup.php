@@ -1,5 +1,5 @@
 <?php
-    require "header.php";
+    require "header.html";
 ?>
 
 <main class='nav-signup'>
