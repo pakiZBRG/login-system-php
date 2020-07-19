@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #dcdcdc;
+  font-family: sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  background: #333;
+  padding: 4px 15px;
+  font-size: 1.2rem;
+  border: 2px solid #333;
+  margin: 5px;
+  border-radius: 20px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.btn:hover {
+  border-radius: 1px;
+}
+
+.btn-outline {
+  border: none;
+  color: #333;
+  background: #fff;
+  padding: 4px 15px;
+  font-size: 1.2rem;
+  border: 2px solid #333;
+  margin: 5px;
+  border-radius: 20px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.btn-outline a {
+  text-decoration: none;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  color: #333;
+}
+
+.btn-outline:hover {
+  border-radius: 1px;
+}
+
+.nav {
+  width: 100%;
+  background: #c2c2c2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+.nav-list {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list li {
+  margin: 0 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.5rem;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.nav-list li a:hover {
+  color: #333;
+}
+
+.nav-login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-login-form input {
+  background: #fff;
+  font-size: 1.1rem;
+  width: 180px;
+  padding: 5px;
+  border: none;
+  margin: 0 10px;
+}
+
+.nav-logout-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-signup {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-signup-form {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-signup-form input {
+  background: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: none;
+  border: 2px solid gray;
+  margin: 5px 0px;
+}
+
+.log-in, .log-out {
+  background: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.login-error {
+  text-align: center;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=main.css.map */

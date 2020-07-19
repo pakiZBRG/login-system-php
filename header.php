@@ -1,0 +1,50 @@
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name='description' content="This is my first website built with PHP and MySQLi. YEAY ME">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.png"> 
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">        
+        <title>Login System | PHP</title>
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <nav class='nav'>
+                <ul class='nav-list'>
+                    <li><a href="#"><img src="img/favicon.png" alt="logo" class='nav-logo'></a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <?php                    
+                    if(isset($_SESSION['userId'])){
+                        echo '
+                            <form class="nav-logout-form" action="includes/logout.inc.php" method="post">
+                                <button class="btn" type="submit" name="logout-submit">Logout</button>
+                            </form>';
+                    } else {
+                        echo '
+                        <form class="nav-login-form" action="includes/login.inc.php" method="post">
+                            <input type="text" name="mailuid" placeholder="Username/E-mail">
+                            <input type="password" name="pwd" placeholder="Password">
+                            <button class="btn" type="submit" name="login-submit">Login</button>
+                            <button class="btn-outline"><a href="signup.php">Signup</a></button>
+                        </form>';
+                    }
+                ?>
+            </nav>
+        </header>
+    </body>
+</html>
+
+
